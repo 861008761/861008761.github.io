@@ -1,13 +1,30 @@
 ---
 layout: post
-title: "第一篇日志"
+title: "java代码高亮"
 description: ""
 category: ""
 tags: []
 ---
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+java代码高亮的用法
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+java代码高亮的用法
+{% highlight java linenos %}
+public class UserDAO {
+	public List<User> getUsers() {
+		// 1.创建配置对象
+		Configuration configuration = new Configuration().configure();
+		ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties())
+				.buildServiceRegistry();
 
-支持中文吗?
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+		SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+		// 5.获取session对象
+		Session session = sessionFactory.openSession();
+
+		Query query = session.createQuery("from User");
+		List<User> list = query.list();
+		return list;
+	}
+}
+{% endhighlight %}
+
+更多关于Jekyll的信息，请访问：[Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
