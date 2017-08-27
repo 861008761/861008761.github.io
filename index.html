@@ -20,7 +20,7 @@ layout: default
 <!-- 分页链接 -->
 <ul class="pagination">
     <li>
-        <a href="{{ site.baseurl}}/article/">
+        <a href="{{ site.baseurl}}/">
             <span>首页</span>
         </a>
     </li>
@@ -29,9 +29,9 @@ layout: default
         <span>&laquo;</span>
     {% else %}
         {% if paginator.previous_page == 1 %}
-        <a href="{{ site.baseurl}}/article/">
+        <a href="{{ site.baseurl}}/">
         {% else %}
-        <a href="{{ site.baseurl}}/article/{{ paginator.previous_page }}">
+        <a href="{{ site.baseurl}}/{{ paginator.previous_page }}">
         {% endif %}
             <span>&laquo;</span>
         </a>
@@ -44,9 +44,9 @@ layout: default
     <li>
         {% endif %}
         {% if i == 1 %}
-        <a href="{{site.baseurl}}/article">{{i}}</a>
+        <a href="{{site.baseurl}}/">{{i}}</a>
         {% else %}
-        <a href="{{site.baseurl}}/article/{{i}}">{{i}}</a>
+        <a href="{{site.baseurl}}/{{i}}">{{i}}</a>
         {% endif %}
     </li>
     {% endfor %}
@@ -54,13 +54,13 @@ layout: default
         {% if paginator.page == paginator.total_pages %}
         <span>&raquo;</span>
         {% else %}
-        <a href="{{ site.baseurl}}/article/{{ paginator.next_page }}">
+        <a href="{{ site.baseurl}}/{{ paginator.next_page }}">
             <span>&raquo;</span>
         </a>
         {% endif %}
     </li>
     <li>
-        <a href="{{ site.baseurl}}/article/{{paginator.total_pages}}">
+        <a href="{{ site.baseurl}}/{{paginator.total_pages}}">
             <span>末页</span>
         </a>
     </li>
