@@ -5,6 +5,20 @@ title: 语法高亮之C++
 
 简单示例：介绍C++语法高亮的用法
 
+在源文件中的插入如下代码：
+{% highlight xml linenos %}
+
+{% highlight c++ linenos %}
+{
+    cout<<endl;
+    cout<<"HAHAHA"<<endl;
+    cout<<"I am Hahaha"<<endl;
+}
+{% endhighlight %}
+
+{% endhighlight %}
+
+得到的效果如下：
 {% highlight c++ linenos %}
 {
     cout<<endl;
