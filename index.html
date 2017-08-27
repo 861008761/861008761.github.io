@@ -31,7 +31,7 @@ layout: default
         {% if paginator.previous_page == 1 %}
         <a href="{{ site.baseurl}}/">
         {% else %}
-        <a href="{{ site.baseurl}}/{{ paginator.previous_page }}">
+        <a href="{{ site.baseurl}}/page{{ paginator.previous_page }}">
         {% endif %}
             <span>&laquo;</span>
         </a>
@@ -46,7 +46,7 @@ layout: default
         {% if i == 1 %}
         <a href="{{site.baseurl}}/">{{i}}</a>
         {% else %}
-        <a href="{{site.baseurl}}/{{i}}">{{i}}</a>
+        <a href="{{site.baseurl}}/page{{i}}">{{i}}</a>
         {% endif %}
     </li>
     {% endfor %}
@@ -54,13 +54,13 @@ layout: default
         {% if paginator.page == paginator.total_pages %}
         <span>&raquo;</span>
         {% else %}
-        <a href="{{ site.baseurl}}/{{ paginator.next_page }}">
+        <a href="{{ site.baseurl}}/page{{ paginator.next_page }}">
             <span>&raquo;</span>
         </a>
         {% endif %}
     </li>
     <li>
-        <a href="{{ site.baseurl}}/{{paginator.total_pages}}">
+        <a href="{{ site.baseurl}}/page{{paginator.total_pages}}">
             <span>末页</span>
         </a>
     </li>
