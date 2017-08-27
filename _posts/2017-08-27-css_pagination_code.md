@@ -7,7 +7,7 @@ tags: []
 ---
 关于分页pagination的bootstrap样式的代码，把它放到自己建立的样式表比如style.css中引用即可。
 
-
+![_config.yml]是这个参数的作用吗？
 <style>
         .pagination { display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 4px; }
         .pagination li { display: inline; }
