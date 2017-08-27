@@ -7,6 +7,7 @@ tags: []
 ---
 摘要：关于hibernate.cfg.xml配置文件的相关介绍
 
+{% highlight xml linenos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
     "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
@@ -47,3 +48,4 @@ tags: []
         <mapping resource="com/itschy/Model/User.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
+{% endhighlight %}

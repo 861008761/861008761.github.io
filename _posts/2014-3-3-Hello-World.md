@@ -13,6 +13,7 @@ title: 语法高亮之C++
 }
 {% endhighlight %}
 
+java代码高亮的用法
 {% highlight java linenos %}
 public class UserDAO {
 	public List<User> getUsers() {
