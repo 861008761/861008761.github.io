@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Java基础
+title: 语法高亮之C++
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+简单示例：介绍C++语法高亮的用法
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 {% highlight c++ linenos %}
 {
     cout<<endl;
@@ -14,4 +13,23 @@ Next you can update your site name, avatar and other options using the _config.y
 }
 {% endhighlight %}
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+{% highlight java linenos %}
+public class UserDAO {
+	public List<User> getUsers() {
+		// 1.创建配置对象
+		Configuration configuration = new Configuration().configure();
+		ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties())
+				.buildServiceRegistry();
+
+		SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+		// 5.获取session对象
+		Session session = sessionFactory.openSession();
+
+		Query query = session.createQuery("from User");
+		List<User> list = query.list();
+		return list;
+	}
+}
+{% endhighlight %}
+
+更多关于Jekyll的信息，请访问：[Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
