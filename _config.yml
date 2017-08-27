@@ -57,7 +57,7 @@ encoding: utf-8
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:year/:month/:day/:title.md
+permalink:
 
 paginate: 2
 paginate_path: "page:num"
