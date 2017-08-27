@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+杨超
+到过青海湖的年轻人
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+本科：贵州大学
+硕士：浙江大学
+现单位：华为杭州研究所
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+小站建于2017年08月27日
+些许简陋
+建议或意见请联系我
+[861008761@qq.com](mailto:861008761@qq.com)
